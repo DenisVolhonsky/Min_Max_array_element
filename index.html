@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Max_min_array_element</title>
+</head>
+
+<body>
+    <script> 
+    	    var a=[10, 15, 20, -1, 1, 2];
+
+			function max_element (a) {
+    			var max=a[0];
+
+    			for (var i=0; i<a.length; i++) {
+    				if (max<a[i]) {
+    					max=a[i];
+    				}
+    			}
+
+	    		// console.log('  max:', max,);	
+	    		document.write('Array:[',a,']<br> max:',max,'<br>');
+    		}
+    		
+    		max_element (a);
+
+    		function min_element (a) {
+    			var min=a[0];
+
+    			for (var i=0; i<a.length; i++) {
+    				if (min>a[i]) {
+    					min=a[i];
+    				}
+    			}
+
+	    		// console.log('  min:', min,);	
+	    		document.write('Array:[',a,']<br> min:',min,);		
+    		}
+    		
+    		min_element (a);
+    </script>
+</body>
+
+</html>
